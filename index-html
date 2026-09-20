@@ -22,7 +22,7 @@
     }
 
     .parallax {
-      background-image: url('background.jpeg'); /* ganti dengan gambar background */
+      background-image: url('background.jpeg')
       height: 400px;
       background-attachment: fixed;
       background-position: center;
