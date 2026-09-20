@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Pribadi Muhamad Gimnastiar</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      color: #333;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .parallax {
+      background-image: url('background.jpeg'); /* ganti dengan gambar background */
+      height: 400px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      color: white;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin-bottom: 15px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .social-icons img {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2) rotate(10deg);
+      filter: drop-shadow(0 0 8px #4CAF50);
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="parallax"></div>
+
+  <header>
+    <img src="foto saya.jpeg" alt="Foto Muhamad" class="profile-img">
+    <h1>Web Pribadi Muhamad Gimnastiar</h1>
+    <p>Mahasiswa | Web Developer | Content Creator | Fotografer</p>
+  </header>
+
+  <nav>
+    <a href="#tentang">Tentang Saya</a>
+    <a href="#skill">Skill</a>
+    <a href="#sertifikat">Sertifikat</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <section id="tentang" data-aos="fade-up">
+    <div class="card">
+      <h2>Tentang Saya</h2>
+      <p>Halo, saya Muhamad. Saya tertarik pada dunia teknologi, pengembangan web, pembuatan konten digital,dan Fotografer.</p>
+    </div>
+  </section>
+
+  <section id="skill" data-aos="fade-right">
+    <div class="card">
+      <h2>Skill</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React & Node.js</li>
+        <li>UI/UX Design</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="sertifikat" data-aos="fade-left">
+    <div class="card">
+      <h2>Sertifikat</h2>
+      <ul>
+        <li>Dicoding Front-End Developer</li>
+        <li>Google Cloud Fundamentals</li>
+        <li>Microsoft Azure Basics</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="kontak" data-aos="zoom-in">
+    <div class="card">
+      <h2>Hubungi Saya</h2>
+      <div class="social-icons">
+        <a href="https://wa.me/6287789374223" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
+        <a href="https://instagram.com/nastiaragim725" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        <a href="https://github.com/agim725" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub"></a>
+        <a href="mailto:nastiaragim725@gmail.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail"></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Muhamad Gimnastiar. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
